@@ -1,14 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello");
-Console.WriteLine("Muhammed Secic");
+int number1, number2, temp;
 
-float x = 5;
-float y = 4;
-Console.WriteLine(x + y);
+Console.Write("\nWrite the first number: ");
+number1 = int.Parse(Console.ReadLine());
 
-Console.WriteLine(x/y);
+Console.Write("\nWrite the second number: ");
+number2 = int.Parse(Console.ReadLine());
 
-Console.WriteLine(-1+4*6);
-Console.WriteLine((35+5)%7);
-Console.WriteLine(14 + -4 * 6 / 11);
-Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
+temp = number1;
+number1 = number2;
+number2 = temp;
+
+Console.Write("\nAfter Swapping: ");
+Console.Write("\nFirst Number : " + number1);
+Console.Write("\nSecond Number : " + number2);
+
+Console.Read();
