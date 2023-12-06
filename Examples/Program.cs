@@ -1,18 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int number1, number2, temp;
+int num1, num2, num3;
 
 Console.Write("\nWrite the first number: ");
-number1 = int.Parse(Console.ReadLine());
+num1 = int.Parse(Console.ReadLine());
 
 Console.Write("\nWrite the second number: ");
-number2 = int.Parse(Console.ReadLine());
+num2 = int.Parse(Console.ReadLine());
 
-temp = number1;
-number1 = number2;
-number2 = temp;
+Console.Write("\nWrite the third number: ");
+num3 = int.Parse(Console.ReadLine());
 
-Console.Write("\nAfter Swapping: ");
-Console.Write("\nFirst Number : " + number1);
-Console.Write("\nSecond Number : " + number2);
+Console.WriteLine(num2 * num2 * num3);
 
 Console.Read();
