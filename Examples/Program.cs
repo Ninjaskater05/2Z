@@ -2,6 +2,8 @@
 Console.WriteLine("Hello");
 Console.WriteLine("Muhammed Secic");
 
-int x = 5;
-int y = 4;
+float x = 5;
+float y = 4;
 Console.WriteLine(x + y);
+
+Console.WriteLine(x/y);
