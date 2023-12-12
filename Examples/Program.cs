@@ -1,17 +1,15 @@
-﻿int int1, int2;
+﻿int int1, remainder1;
 
-Console.Write("input first number: ");
+Console.Write("Input an integer to check whether number odd or even: ");
 int1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("input second number: ");
-int2 = Convert.ToInt32(Console.ReadLine());
+remainder1 = int1 % 2;
 
-if (int1 == int2)
+if (remainder1 == 0)
 {
-    Console.WriteLine("{0} and {1} are equal", int1, int2);
-}   
-
+    Console.WriteLine ("{0} is an even integer", int1);
+}
 else
 {
-    Console.WriteLine("{0} is not equal to {1}", int1, int2);
+    Console.WriteLine ("{0} is an odd integer", int1);
 }
