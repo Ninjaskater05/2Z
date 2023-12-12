@@ -1,13 +1,13 @@
-﻿int checkLeap;
+﻿int checkAge;
 
-Console.WriteLine("Input a year, to check if leap year or not: ");
-checkLeap = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a age to check if eligible to vote: ");
+checkAge = Convert.ToInt32(Console.ReadLine());
 
-if (checkLeap % 4 == 0)
+if (checkAge >= 21)
 {
-    Console.WriteLine("{0} is a leap year", checkLeap);
+    Console.WriteLine("{0} is a eligible year to vote", checkAge);
 }
 else
 {
-    Console.WriteLine("{0} is not a leap year", checkLeap);
+    Console.Write("{0} is not a eligible year to vote", checkAge);
 }
