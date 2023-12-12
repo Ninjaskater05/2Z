@@ -1,13 +1,23 @@
-﻿int checkAge;
+﻿int m, n;
 
-Console.WriteLine("Input a age to check if eligible to vote: ");
-checkAge = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input number");
+m = Convert.ToInt32(Console.ReadLine());
 
-if (checkAge >= 21)
+if (m != 0)
 {
-    Console.WriteLine("{0} is a eligible year to vote", checkAge);
+    if (m > 0)
+    {
+        n = 1;
+    }
+    else
+    {
+        n = -1;
+    }
 }
 else
 {
-    Console.Write("{0} is not a eligible year to vote", checkAge);
+    n = 0;
 }
+
+Console.WriteLine("{0} is m", m);
+Console.WriteLine("{0} is n", n);
