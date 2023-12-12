@@ -1,13 +1,13 @@
-﻿int num;
+﻿int checkLeap;
 
-Console.WriteLine("Enter number to check if positive or negative: " );
-num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a year, to check if leap year or not: ");
+checkLeap = Convert.ToInt32(Console.ReadLine());
 
-if (num >= 0)
+if (checkLeap % 4 == 0)
 {
-    Console.WriteLine("{0} is a positive number", num);
+    Console.WriteLine("{0} is a leap year", checkLeap);
 }
 else
 {
-    Console.WriteLine("{0} is a negative number", num);
+    Console.WriteLine("{0} is not a leap year", checkLeap);
 }
