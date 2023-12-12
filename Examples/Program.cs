@@ -1,26 +1,27 @@
-﻿float num1, num2, num3;
+﻿float cord1, cord2;
 
-Console.Write("Input first number: ");
-num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input value for x: ");
+cord1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input second number: ");
-num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input value for y: ");
+cord2 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input third number: ");
-num3 = Convert.ToInt32(Console.ReadLine());
-
-if (num1 > num2)
+if (cord1 > 0)
 {
-    if (num1 > num3)
+    if (cord2 > 0)
     {
-        Console.WriteLine("{0} is the biggest number", num1);
+        Console.WriteLine("The coordinate point ({0}, {1}) lies in first quadrant", cord1, cord2);
     }
     else
     {
-        Console.WriteLine("{0} is the biggest number", num3);
+        Console.WriteLine("The coordinate point ({0}, {1}) lies in fourth quadrant", cord1, cord2);
     }
+}
+else if (cord1 < 0 && cord2 < 0)
+{
+    Console.WriteLine("The coordinate point ({0}, {1}) lies in third quadrant", cord1, cord2);
 }
 else
 {
-    Console.WriteLine("{0} is the biggest number", num2);
+    Console.WriteLine("The coordinate point ({0}, {1}) lies in second quadrant", cord1, cord2);
 }
