@@ -1,23 +1,17 @@
-﻿int m, n;
+﻿float height;
 
-Console.WriteLine("Input number");
-m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input your height (in cm): ");
+height = Convert.ToInt32(Console.ReadLine());
 
-if (m != 0)
+if (height < 160)
 {
-    if (m > 0)
-    {
-        n = 1;
-    }
-    else
-    {
-        n = -1;
-    }
+    Console.WriteLine("This person a dwarf");
 }
-else
+else if (height >= 160 && height < 210)
 {
-    n = 0;
+    Console.WriteLine("This person a normal height");
 }
-
-Console.WriteLine("{0} is m", m);
-Console.WriteLine("{0} is n", n);
+else 
+{
+    Console.WriteLine("WTF?");
+}
